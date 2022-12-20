@@ -23,10 +23,12 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 72px;
+    padding: 0;
 }
 
 .nav-box {
     display: flex;
+    
 }
 
 .logo {
@@ -51,6 +53,7 @@ body {
 .logo-studio {
     color: var(--dark-navy-blue);
     display: inline-block;
+    
 }
 
 .logo-studio-cloud {
@@ -76,7 +79,6 @@ body {
 .top-menu-link {
     text-decoration: none;
     color: var(--dark-navy-blue);
-
 }
 
 .top-menu-link:hover,
@@ -123,6 +125,8 @@ body {
     background-color: var(--dark-navy-blue);
     text-align: center;
 
+    /* display: flex;
+    align-items: flex-end; */
     height: 600px;
 }
 
@@ -138,11 +142,10 @@ body {
 
 .features {
     display: flex;
+    
 }
 
 .features .features-list {
-    margin-top: 120px;
-    margin-bottom: 120px;
     margin-right: 24px;
 }
 
@@ -172,7 +175,12 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  } 
+  }
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .container {
     width: 1158px;
@@ -186,18 +194,18 @@ body {
     margin: 0;
 }
 
+.services {
+    padding-top: 0;
+}
+
 .our-services {
     display: flex;
     justify-content: space-between;
-
-    margin-bottom: 120px;
 }
 
 .our-team {
     background-color: var(--cloud);
 
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .team-cards {
@@ -221,10 +229,20 @@ body {
 .dark-footer { 
     background-color: var(--dark-navy-blue);
     color: #FFFFFF;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-slogan {
+    width: 264px;
+    margin: 0;
+    margin-top: 16px;
 }
 
 /* Buttons */
 .button {
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
     color: #FFFFFF;
@@ -238,12 +256,19 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.filter.button {
+.filter .button {
     color: var(--primary-brand-color-iris);
     
     border: 1px solid var(--cornflower);
     background-color: var(--cornflower);
     padding: 8px 16px;
+}
+
+.filter-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
 }
 
 .button:hover,
@@ -253,9 +278,22 @@ body {
     
 }
 
-.filter.button:hover,
-.filter.button:focus {
+.filter {
+    padding-bottom: 120px;
+}
+
+.filter .button:hover,
+.filter .button:focus {
     border: 1px solid var(--primary-brand-color-iris);
+
+}
+
+.filter-box .button-list {
+    margin-right: 24px;
+}
+
+.filter-box .button-list:last-child {
+    margin-right: 0;
 }
 
 /* Portfolio page style */
@@ -269,10 +307,33 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: var(--dark-navy-blue);
+    margin: 0;
 }
 
 .paragraph-link {
     text-decoration: none;
     color: var(--slate);
+    margin: 8px 0 0 0;
 }
 
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.examples .examples-list {
+    margin-right: 24px;
+    margin-bottom: 48px;
+
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+}
+
+.examples .examples-list:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.examples .examples-list:not(:nth-last-child(1n+4)) {
+    margin-bottom: 0;
+}
