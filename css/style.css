@@ -130,10 +130,6 @@ body {
 .baner {
     background-color: var(--dark-navy-blue);
     text-align: center;
-
-    /* display: flex;
-    align-items: flex-end; */
-    /* height: 600px; */
 }
 
 .header-sections {
@@ -163,11 +159,12 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: var(--dark-navy-blue);
+    margin: 0 0 8px 0;
 }
 
 .text-items {
     color: var(--slate);
-
+    margin: 0;
 }
 
 .visually-hidden {
@@ -232,18 +229,15 @@ body {
     margin-right: 0;
 }
 
-.dark-footer { 
-    background-color: var(--dark-navy-blue);
-    color: #FFFFFF;
+.team-title {
+    text-align: center;
 
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.footer-slogan {
-    width: 264px;
-    margin: 0;
-    margin-top: 16px;
+.images {
+    display: block;
 }
 
 /* Buttons */
@@ -351,4 +345,20 @@ body {
     padding-left: 16px;
     padding-top: 30px;
     padding-bottom: 32px;
+}
+
+
+/* Footer */
+.dark-footer { 
+    background-color: var(--dark-navy-blue);
+    color: #FFFFFF;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-slogan {
+    width: 264px;
+    margin: 0;
+    margin-top: 16px;
 }
