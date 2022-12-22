@@ -26,15 +26,19 @@ body {
 
 .header-box {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     /* height: 72px; */
-    padding: 24px 0;
+    
 }
 
 .nav-box {
     display: flex;
     
+}
+
+.address-box {
+    margin-left: auto;
 }
 
 .logo {
@@ -44,8 +48,9 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    display: flex;
+    /* display: flex; */
     margin-right: 70px;
+    padding: 24px 0;
 
     text-transform: uppercase;
     text-decoration: none;
@@ -72,6 +77,7 @@ body {
     letter-spacing: 0.02em;
     
     display: flex;
+    align-items: center;
 }
 
 .top-menu .top-menu-items {
@@ -85,6 +91,7 @@ body {
 .top-menu-link {
     text-decoration: none;
     color: var(--dark-navy-blue);
+    padding: 24px 0;
 }
 
 .top-menu-link:hover,
@@ -123,6 +130,9 @@ body {
     line-height: 1.07;
     color: #FFFFFF;
 
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     margin-bottom: 48px;
 }
@@ -130,6 +140,9 @@ body {
 .baner {
     background-color: var(--dark-navy-blue);
     text-align: center;
+
+    padding-top: 192px;
+    padding-bottom: 192px;
 }
 
 .header-sections {
@@ -186,7 +199,9 @@ body {
 }
 
 .container {
-    width: 1158px;
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -201,9 +216,15 @@ body {
     padding-top: 0;
 }
 
+
 .our-services {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* gap: 0 24px; */
+}
+
+.our-services .services-list:not(:last-child) {
+    margin-right: 24px;
 }
 
 .our-team {
@@ -253,7 +274,6 @@ body {
     border-radius: 4px;
     padding: 16px 32px;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filter .button {
@@ -267,8 +287,7 @@ body {
 .filter-box {
     display: flex;
     justify-content: center;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .button:hover,
@@ -279,13 +298,14 @@ body {
 }
 
 .filter {
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 
 .filter .button:hover,
 .filter .button:focus {
     border: 1px solid var(--primary-brand-color-iris);
-
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filter-box .button-list {
@@ -297,6 +317,10 @@ body {
 }
 
 /* Portfolio page style */
+
+.filter .container {
+    box-sizing: content-box;
+}
 
 .filter-items-link {
     
@@ -325,11 +349,7 @@ body {
     margin-right: 24px;
     margin-bottom: 48px;
 
-    border-bottom: 0.5px solid #F4F4FD;
-    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 2px 1px rgba(46, 47, 66, 0.08);
+    
 }
 
 .examples .examples-list:nth-child(3n+3) {
@@ -345,6 +365,11 @@ body {
     padding-left: 16px;
     padding-top: 30px;
     padding-bottom: 32px;
+
+    border-bottom: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -359,6 +384,10 @@ body {
 
 .footer-slogan {
     width: 264px;
+    margin: 0;
+}
+
+.slogan-text {
     margin: 0;
     margin-top: 16px;
 }
